@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Daniel Udeh" />
+  <meta name="description" content="Daniel Udeh's front-end developer portfolio showcasing interactive projects, skills, and contact information." />
+  <meta name="keywords" content="Front-end developer, HTML, CSS, JavaScript, portfolio, web developer" />
+  <meta property="og:title" content="Blexed Sinner | Front-End Developer Portfolio" />
+  <meta property="og:description" content="A modern and interactive portfolio showcasing Blexed's web development projects and skills." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>DANIEL UDEH | Front-End Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<link rel="icon" href="logo2.png" type="image/x-icon">
+</head>
+
+
+<body>
+  <div class="cursor"></div>
+  <div class="spotlight-overlay"></div>
+
+  <!-- Header -->
+  <header>
+  <nav class="nav">
+    <img src="logo2.png" alt="my logo" class="logo" />
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div aria-label="Toggle navigation menu" class="nav-toggle" id="nav-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
+
+
+  <!-- Hero -->
+ <section id="about" class="hero-section"  data-aos="fade-up">
+  <div class="hero-content">
+    <h1 class="hero-heading">Hi, I’m <span class="name">DANIEL UDEH</span></h1>
+    <h2 class="typewriter-text">A Front-End Developer</h2>
+      <p class="hero-subtext">🚀 I bring designs to life on the web — building fast, modern, and responsive websites using HTML, CSS, JavaScript, and React.</p>
+    <p class="hero-subtext">⚒️ Whether it's a personal brand or a product launch, I craft beautiful digital experiences that connect.</p>
+    <a href="#contact" class="cta-btn">Let’s Work Together</a>
+  </div>
+</section>
+
+
+  <!-- Projects -->
+<section id="projects" class="project-section" data-aos="zoom-in">
+  <h2>Projects</h2>
+
+  <div class="filters">
+    <button class="filter-btn active" data-type="all">All</button>
+    <button class="filter-btn" data-type="html">HTML</button>
+    <button class="filter-btn" data-type="javascript">JavaScript</button>
+    <button class="filter-btn" data-type="api">API</button>
+  </div>
+
+  <div class="project-grid">
+    <div class="project-card" data-type="html">
+      <h3>Responsive Login Page</h3>
+      <p>Built with HTML & CSS</p>
+      <p style="color:gray" class="updating">coming soon...</p>
+    </div>
+
+    <div class="project-card" data-type="javascript">
+      <h3>Typing Speed Game</h3>
+      <p>Real-time DOM & Timer</p>
+      <p style="color:gray" class="updating">coming soon...</p>
+    </div>
+
+    <div class="project-card" data-type="api">
+      <h3>Weather App</h3>
+      <p>Uses OpenWeather API</p>
+      <p style="color:gray" class="updating">coming soon...</p>
+    </div>
+
+    <div class="project-card" data-type="javascript">
+  <img src="mortgage-preview.jpg" alt="Screenshot of Mortgage Calculator Project" class="project-img" />
+  <div class="project-content">
+    <h3 class="project-title">Mortgage Calculator</h3>
+    <p class="project-description">
+      A clean and responsive mortgage calculator that helps users estimate monthly payments based on loan amount, interest, and duration.
+      Built with vanilla HTML, CSS, and JavaScript, showcasing input handling, conditional logic, and DOM manipulation.
+    </p>
+    <div class="project-tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
+    <div class="project-links">
+      <a href="https://diddy0077.github.io/Mortgage-calculator/" target="_blank" class="btn">🔗 Live</a>
+      <a href="https://github.com/diddy0077/Mortgage-calculator" target="_blank" class="btn">📂 Code</a>
+    </div>
+  </div>
+</div>
+
+<div class="project-card" data-type="javascript">
+  <img src="quiz-preview.jpg" alt="Screenshot of Quiz App Project" class="project-img" />
+  <div class="project-content">
+    <h3 class="project-title">Interactive Quiz App</h3>
+    <p class="project-description">
+      A sleek and interactive quiz application that tests users on multiple categories with real-time scoring and feedback.
+      Built with HTML, CSS, and JavaScript to showcase dynamic DOM manipulation and state management.
+    </p>
+    <div class="project-tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
+    <div class="project-links">
+      <a href="https://diddy0077.github.io/Quiz-App/" target="_blank" class="btn">🔗 Live</a>
+      <a href="https://github.com/diddy0077/Quiz-App" target="_blank" class="btn">📂 Code</a>
+    </div>
+  </div>
+</div>
+
+<div class="project-card" data-type="javascript">
+  <img src="todo-preview.jpg" alt="Screenshot of To-Do List App" class="project-img" />
+  <div class="project-content">
+    <h3 class="project-title">To-Do List App</h3>
+    <p class="project-description">
+      A minimalist and functional To-Do List application that allows users to add, complete, and delete tasks. Built with HTML, CSS, and JavaScript, this app demonstrates real-time DOM updates and localStorage for persistent data.
+    </p>
+    <div class="project-tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
+    <div class="project-links">
+      <a href="https://diddy0077.github.io/Todo-List-App/" target="_blank" class="btn">🔗 Live</a>
+      <a href="https://github.com/diddy0077/Todo-List-App" target="_blank" class="btn">📂 Code</a>
+    </div>
+  </div>
+</div>
+
+<div class="project-card" data-type="javascript">
+  <img src="rps-preview.jpg" alt="Screenshot of Rock Paper Scissors Game Project" class="project-img" />
+  <div class="project-content">
+    <h3 class="project-title">Rock Paper Scissors Game</h3>
+    <p class="project-description">
+      A stylish, animated Rock-Paper-Scissors game that lets users compete against the computer. Built using HTML, CSS, and JavaScript with real-time score tracking and conditional logic to determine round results.
+    </p>
+    <div class="project-tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
+    <div class="project-links">
+      <a href="https://diddy0077.github.io/Rock-Paper-Scissors/" target="_blank" class="btn">🔗 Live</a>
+      <a href="https://github.com/diddy0077/Rock-Paper-Scissors" target="_blank" class="btn">📂 Code</a>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Add more projects -->
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section" data-aos="fade-right">
+  <h2 class="skills-title">🛠️ Skills</h2>
+
+  <!-- Skill Cards -->
+  <div class="skills-grid">
+    <div class="skill-card" data-tooltip="Semantic HTML, Accessibility">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo" />
+      <p>HTML</p>
+    </div>
+    <div class="skill-card" data-tooltip="Responsive Styling, Flex/Grid">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo" />
+      <p>CSS</p>
+    </div>
+    <div class="skill-card" data-tooltip="DOM, ES6, Projects">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" />
+      <p>JavaScript</p>
+    </div>
+    <div class="skill-card" data-tooltip="Version Control">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo" />
+      <p>Git</p>
+    </div>
+    <div class="skill-card" data-tooltip="GitHub Repos, Collaboration">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub logo" />
+      <p>GitHub</p>
+    </div>
+    <div class="skill-card" data-tooltip="Utility-First CSS">
+       <img src="tailwindcss-mark.d52e9897.svg" alt="Tailwind CSS Logo" class="w-12 h-12" />
+      <p>Tailwind</p>
+    </div>
+    <div class="skill-card" data-tooltip="JavaScript Library">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React logo" />
+      <p>React</p>
+    </div>
+  </div>
+
+  <!-- Progress Bars -->
+  <div class="progress-section" data-aos="fade-up">
+    <div class="progress-item">
+      <p>HTML</p>
+      <div class="progress-bar"><div class="progress-fill" data-width="90%"></div></div>
+    </div>
+    <div class="progress-item">
+      <p>CSS</p>
+      <div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div>
+    </div>
+    <div class="progress-item">
+      <p>JavaScript</p>
+      <div class="progress-bar"><div class="progress-fill" data-width="80%"></div></div>
+    </div>
+    <div class="progress-item">
+      <p>Git & GitHub</p>
+      <div class="progress-bar"><div class="progress-fill" data-width="75%"></div></div>
+    </div>
+    <div class="progress-item">
+      <p>Tailwind CSS</p>
+      <div class="progress-bar"><div class="progress-fill" data-width="70%"></div></div>
+    </div>
+    <div class="progress-item">
+      <p>React</p>
+      <div class="progress-bar"><div class="progress-fill" data-width="65%"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="counters-section" data-aos="fade-up">
+  <div class="counter-box">
+    <h3 id="years" data-target="2">0</h3>
+    <p>Years of Experience</p>
+  </div>
+  <div class="counter-box">
+    <h3 id="projects" data-target="15">0</h3>
+    <p>Projects Built</p>
+  </div>
+  <div class="counter-box">
+    <h3 id="skills" data-target="12">0</h3>
+    <p>Skills Mastered</p>
+  </div>
+</section>
+
+  <!-- Contact -->
+ 
+    <section class="contact-section" id="contact" data-aos="fade-left">
+  <div class="contact-wrapper" data-aos="fade-up">
+    <div class="contact-text" data-aos="fade-right" data-aos-delay="200">
+      <h2>Let's Connect</h2>
+      <p>Got a project, a question, or just want to say hi? I’d love to hear from you. Fill out the form and let’s talk!</p>
+    </div>
+
+    <form id="contact-form" class="contact-form" novalidate>
+      <div class="input-group">
+        <label for="name"></label>
+        <input type="text" id="name" name="name" required placeholder="Your Name" aria-required="true"/>
+        <small id="name-error" class="error-message"></small>
+      </div>
+
+      <div class="input-group">
+        <label for="email"></label>
+        <input type="email" id="email" name="email" required placeholder="Your Email" aria-required="true"/>
+        <small id="email-error" class="error-message"></small>
+      </div>
+
+      <div class="input-group">
+        <label for="message"></label>
+        <textarea id="message" name="message" required placeholder="Your Message" aria-required="true"></textarea>
+        <small id="message-error" class="error-message"></small>
+      </div>
+
+      <button type="submit" class="btn-submit">Send Message</button>
+      <p id="form-response" class="form-response"></p>
+    </form>
+  </div>
+</section>
+
+
+
+ <footer class="footer">
+  <div class="footer-container">
+    <img src="logo2.png" alt="my logo" class="logo" />
+    <h3 class="footer-logo">Daniel.dev</h3>
+
+    <ul class="footer-socials">
+      <li><a href="https://github.com/diddy0077" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/daniel-udeh-a03971350/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="mailto:danieludeh0077@yahoo.com"><i class="fas fa-envelope"></i></a></li>
+      <li><a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+
+    <p class="footer-copy">© 2025 Daniel Udeh. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  // animation duration
+    once: true       // animation triggers only once
+  });
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".skill-card"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2,
+    scale: 1.05,
+  });
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+  gsap.to(".hero-heading", {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+    delay: 0.5
+  });
+  gsap.to(".hero-subtext", {
+    opacity: 1,
+    duration: 1.2,
+    delay: 3.2
+  });
+  gsap.from(".cta-btn", {
+    opacity: 1,
+    scale: 0.8,
+    delay: 3.8,
+    duration: 0.8
+  });
+</script>
+  <script src="script.js"></script>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+</html>
